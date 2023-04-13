@@ -23,12 +23,12 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
-gem 'redis-namespace'
-gem 'redis-rails'
-gem 'redis-rack-cache'
+# gem 'redis', '~> 4.0'
+# gem 'redis-namespace'
+# gem 'redis-rails'
+# gem 'redis-rack-cache'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -39,10 +39,15 @@ gem 'redis-rack-cache'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
+# gem 'faraday-http-cache'
+gem 'jsonapi-serializer'
+gem 'rack-attack'
+gem 'dalli'
+gem 'memcached'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'jsonapi-serializer'
   gem 'pry'
 end
 

@@ -29,6 +29,7 @@ module ECommerce
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-    config.cache_store = :redis_store, 'redis://localhost:6349/0/cache', { expires_in: 90.minutes }
+    config.cache_store = :mem_cache_store 
+    # config.middleware.use Rack::Attack 
   end
 end
