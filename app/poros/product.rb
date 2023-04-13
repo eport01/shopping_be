@@ -1,5 +1,5 @@
 class Product
-  attr_reader :id, :title, :price, :category, :description, :image, :day  
+  attr_reader :id, :title, :price, :category, :description, :image  
   def initialize(attributes)
     @id = attributes[:id]
     @title = attributes[:title]
@@ -7,7 +7,7 @@ class Product
     @category = attributes[:category]
     @description = attributes[:description]
     @image = attributes[:image]
-    @day = day 
+
 
   end
 

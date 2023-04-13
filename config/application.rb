@@ -29,7 +29,7 @@ module ECommerce
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-    config.cache_store = :mem_cache_store 
+    config.cache_store = :redis_cache_store 
     # config.middleware.use Rack::Attack 
   end
 end
