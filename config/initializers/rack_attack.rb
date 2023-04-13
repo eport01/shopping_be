@@ -1,10 +1,8 @@
-# class Rack::Attack 
-#   Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new 
+class Rack::Attack 
+  Rack::Attack.cache.store = Rails.cache 
 
-#   throttle('products_ip', limit: 2, period: 20.seconds) do |req|
-#     if req.path == '/products' && req.get? 
-#       req.params[session[:user_id]].presence 
 
-#     end
-#   end
-# end
+  Rack::Attack.throttle('products_limit', limit: 2, period: 30.seconds) do |req|
+    req.ip if req.path.include?('/products') && req.get?
+  end
+end

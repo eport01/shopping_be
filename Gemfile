@@ -41,7 +41,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 # gem 'faraday-http-cache'
 gem 'jsonapi-serializer'
-# gem 'rack-attack'
+gem 'rack-attack'
 gem 'dalli'
 gem 'memcached'
 
