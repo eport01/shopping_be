@@ -41,6 +41,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 # gem 'faraday-http-cache'
 gem 'jsonapi-serializer'
+# gem 'rack-attack'
+gem 'dalli'
+gem 'memcached'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

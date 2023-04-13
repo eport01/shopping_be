@@ -59,6 +59,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    dalli (3.2.4)
     date (3.3.3)
     erubi (1.12.0)
     execjs (2.8.1)
@@ -89,6 +90,7 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
+    memcached (1.8.0)
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.0)
@@ -194,10 +196,12 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   coffee-rails (~> 4.2)
+  dalli
   faraday
   jbuilder (~> 2.5)
   jsonapi-serializer
   listen (>= 3.0.5, < 3.2)
+  memcached
   pg (>= 0.18, < 2.0)
   pry
   puma (~> 3.11)
